@@ -1,16 +1,14 @@
-/* Global Styles */
+
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Times New Roman', Times, serif; /* Global font for consistency */
 }
 
 p {
   color: black;
   margin-left: 30px;
   margin-top: -10px;
-  
 }
 
 label {
@@ -25,27 +23,30 @@ label {
   margin-top: -30px;
 }
 
+#homepage {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('../src/images/Background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
 
-
-.login-container {
+.login-container, .signup-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   height: 100vh;
-  padding-left: 20px;
-  background-position: center;
-  background-size: cover;
+  padding-left: 40px;
 }
 
-.login-container .form-container {
+.form-container {
   margin-top: 20px;
   text-align: left;
-}
-
-.login-container h1 {
-  color: #3CC585;
-  margin-left: 30px;
 }
 
 .error-message {
@@ -57,10 +58,15 @@ label {
   transition: opacity 0.2s ease;
 }
 
-.login-container .error-message.visible {
+.error-message.visible {
   display: block;
   margin-left: 30px;
-  margin-top: -5px;
+  margin-top: -3px;
+}
+
+h1 {
+  color: #3CC585;
+  margin-left: 30px;
 }
 
 button {
@@ -72,10 +78,10 @@ button {
   cursor: pointer;
   margin-top: 20px;
   color: white;
-  margin-left: 90px;
+  margin-left: 95px;
 }
 
-.login-container input {
+input {
   border: 1px solid #3CC585;
   border-radius: 5px;
   padding: 10px;
@@ -87,7 +93,7 @@ button {
   background-color: white;
 }
 
-.login-container select {
+select {
   border: 1px solid #3CC585;
   border-radius: 5px;
   padding: 10px;
@@ -110,6 +116,8 @@ button {
   width: 400px; /* Adjust width as per your requirement */
   text-align: center;
   z-index: 1000;
+  
+  /* Flexbox for centering content */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,50 +152,6 @@ button {
 }
 
 
-.signup-container {
-  border-radius: 10px; /* Rounded corners */
-  padding: 40px 20px; /* Add top padding for more space */
-  width: 90%; /* Responsive width */
-  max-width: 400px; /* Max width to keep it neat */
-  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background for better contrast */
-}
-
-
-.signup-container h1 {
-  margin-top: 220px;
-  margin-left: 20px;
-  margin-right: -300px;
-  font-size: 28px;
-  color: #3CC585; /* Center title */
-}
-
-
-
-.signup-container .input-group {
-  margin-bottom: 15px; /* Spacing between input fields */
-}
-
-.signup-container label {
-  font-size: 18px; /* Font size for labels */
-  color: #3b3b3b; /* Same as title color */
-  margin-bottom: 5px;
-}
-
-.signup-container input {
-  padding: 10px; /* Padding for inputs */
-  border: 1px solid #3CC585; /* Light border */
-  border-radius: 5px; /* Rounded inputs */
-  font-size: 16px; /* Font size for inputs */
-}
-
-
-
-.signup-container button:hover {
-  background-color: #3a9a60; /* Darker green on hover */
-}
-
-
-/* Links in Login Styles */
 #forget {
   color: #3CC585;
   margin-left: 70px;
@@ -196,11 +160,4 @@ button {
 #signup {
   color: #3CC585;
   margin-left: 5px;
-  text-decoration: underline;
-}
-#login {
-  color: #3CC585;
-  margin-left: 20px;
-  text-decoration: underline;
-  margin-top: 10px;
 }

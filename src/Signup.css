@@ -1,0 +1,59 @@
+.signup-background {
+  background-color: #f0f9f8; /* Adjust to match your login background color */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for the form */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Max width to keep it neat */
+}
+
+h1 {
+  text-align: center; /* Center title */
+  color: #3b3b3b; /* Adjust color to match your theme */
+}
+
+.input-group {
+  margin-bottom: 15px; /* Spacing between input fields */
+}
+
+label {
+  font-size: 14px; /* Font size for labels */
+  color: #3b3b3b; /* Same as title color */
+}
+
+input {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded inputs */
+  font-size: 16px; /* Font size for inputs */
+}
+
+button {
+  width: 100%; /* Full width button */
+  padding: 12px; /* Padding for button */
+  background-color: #3cb371; /* Green background */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #3a9a60; /* Darker green on hover */
+}
+
+.error-message {
+  color: red; /* Error message color */
+  text-align: center; /* Center error messages */
+}
